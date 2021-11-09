@@ -1,0 +1,83 @@
+//FONT
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+
+//VARIABLES
+$bg-footer:#505050;
+$primary : #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$bg-footer:#505050;
+
+//RESTAURANT HEADER
+#restaurantHeader {
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    .headerTitlerestaurants {
+        margin: auto;
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+// BODY FONT
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+// INDEX BUTTON
+.button {
+    color:white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5em;
+    margin: 0 2em;
+    padding: 1em;
+    background: rgb(255,121,218);
+    background: linear-gradient(185deg, rgba(255,121,218,1) 0%, rgba(159,106,214,1) 84%, rgba(147,86,220,1) 100%);
+}
+
+// RESTAURANT BUTTON
+.orderButton {
+    color:white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5em;
+    margin: 0 2em;
+    padding: 1em 2em;
+    background: rgb(255,121,218);
+    background: linear-gradient(185deg, rgba(255,121,218,1) 0%, rgba(159,106,214,1) 84%, rgba(147,86,220,1) 100%);
+}
+
+
+// FOOTER
+footer {
+    background-color: $bg-footer;
+    padding: 1em;
+    .footer_title {
+        padding: 0  0 0 2em;
+        color: white;
+        font-family: 'Shrikhand', cursive;
+    }
+    .footer_container {
+        color: white;
+        ul {
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            li{
+                padding: 0 0 0 2em;
+                line-height: 1.5em;
+                height: auto;
+                i {
+                    padding-right: 5px;
+                }
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}

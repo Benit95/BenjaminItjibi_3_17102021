@@ -1,0 +1,171 @@
+
+@import "_normalize.scss";
+@import "_base.scss";
+@import "_menu.scss";
+
+
+
+@media screen and (max-width:768px) {
+    #indexHeader{
+        #indexTitle {
+            display: flex;
+            justify-content: center;
+            font-family: 'Shrikhand', cursive;
+            margin: auto;
+            height:1.5em;
+            padding-top: .5em;
+    }
+
+    }
+    #indexNavigation {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #f6f6f6;
+        padding-bottom: 1em;
+        #indexLocation{
+            border-top:3px solid #dbdbdb;;
+            background-color: #ebebeb;
+            padding: 10px 0;
+            #location  {
+                background-color: inherit;
+                border: none;
+                width: 130px;
+                &::placeholder{
+                    color:black;
+                    font-weight: bold;
+                } 
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        #hook {
+            display: flex;
+            flex-direction: column;
+        }
+        .button {
+            color:white;
+            font-weight: bold;
+            border: none;
+            border-radius: 1.5em;
+            margin: 0 2em;
+            padding: 1em;
+            background: rgb(255,121,218);
+            background: linear-gradient(185deg, rgba(255,121,218,1) 0%, rgba(159,106,214,1) 84%, rgba(147,86,220,1) 100%);
+        }
+    }
+    #indexOperation {
+        .operation_title {
+            padding: 0 1em;
+        }
+        .operation_container{
+            padding: 0;
+            .operation_thumbnail {
+                display: flex;
+                background-color: #f6f6f6;
+                margin: 1em;
+                padding: 1em;
+                border-radius: 1.3em;
+                align-items: center;
+                cursor: pointer;
+                font-weight: bold;
+                .number {
+                    background-color: $primary;
+                    color: #fff;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    margin-left: -1.7rem;
+                    margin-right: 0.8rem;
+                    font-size: 1.2rem;
+    
+                }
+                i {
+                    padding-right: 1rem;
+                    color: #747474;
+                }
+                &:hover {
+                    background-color: #ebe1fa;
+                    i{
+                        color: #9356DC;
+                    }
+                }
+            }
+        }
+    }
+    #indexRestaurant {
+        background-color: #f2f2f2;
+        padding-bottom: 2rem;
+            .restaurant_title {
+                padding: 1em 0em 0 1em;
+            }
+            .restaurant_container{
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1em 1em;
+                    background-color: white;
+                    border-radius: 1em;
+                    position: relative;
+                    .cardNew {
+                        color:green;
+                        font-weight: bold;
+                        background-color: rgb(169, 252, 241);
+                        position: absolute;
+                        padding: 5px;
+                        right: 10px;
+                    }
+                    figure {
+                        width: 100%;
+                        margin: 0;
+                        .indexImg {
+                            max-height: 160px;
+                            width: 100%;
+                            border-top-left-radius: 1em;
+                            border-top-right-radius: 1em;
+                            object-fit: cover;
+                        }
+                    }
+                    figcaption {
+                        display: grid;
+                        grid-template-columns: 80% 20%;
+                        .cardContent {
+                            line-height: 0.3em;
+                            padding-left: 1em;
+                        }
+                        .cardHeart {
+                            position: relative;
+                            font-size: 1.8rem;
+                        }
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            right: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        .full_heart{
+                            opacity: 0;
+                        }
+                        .cardHeart:hover{
+                            animation: all;
+                            .far{
+                                opacity: 0.5;
+                            }
+                            .full_heart{
+                                transition: 0.8s;
+                                opacity: 1;
+                                background: linear-gradient(158deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+                                -webkit-text-fill-color: transparent;
+                                -webkit-background-clip: text;
+                            }
+                        }
+                    }
+                }   
+            }
+    }
+           
+}

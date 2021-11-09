@@ -1,0 +1,764 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+#restaurantHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+}
+
+#restaurantHeader .headerTitlerestaurants {
+  margin: auto;
+  font-family: 'Shrikhand', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button {
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 1.5em;
+  margin: 0 2em;
+  padding: 1em;
+  background: #ff79da;
+  background: linear-gradient(185deg, #ff79da 0%, #9f6ad6 84%, #9356dc 100%);
+}
+
+.orderButton {
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 1.5em;
+  margin: 0 2em;
+  padding: 1em 2em;
+  background: #ff79da;
+  background: linear-gradient(185deg, #ff79da 0%, #9f6ad6 84%, #9356dc 100%);
+}
+
+footer {
+  background-color: #505050;
+  padding: 1em;
+}
+
+footer .footer_title {
+  padding: 0  0 0 2em;
+  color: white;
+  font-family: 'Shrikhand', cursive;
+}
+
+footer .footer_container {
+  color: white;
+}
+
+footer .footer_container ul {
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+footer .footer_container ul li {
+  padding: 0 0 0 2em;
+  line-height: 1.5em;
+  height: auto;
+}
+
+footer .footer_container ul li i {
+  padding-right: 5px;
+}
+
+footer .footer_container ul li a {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .bgimg {
+    width: 100%;
+  }
+  #bg_radius-resto {
+    background-color: #f2f2f2;
+    border-radius: 2rem 2rem 0 0;
+    padding-bottom: 1em;
+    margin-top: -2em;
+    position: relative;
+  }
+  .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1em 2em 0 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'Shrikhand', cursive;
+  }
+  .title .titleRestaurant {
+    font-size: .6em;
+  }
+  .title .titleHeart {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .title i {
+    position: absolute;
+  }
+  .title .full_heart {
+    opacity: 0;
+  }
+  .title .titleHeart:hover {
+    -webkit-animation: all;
+            animation: all;
+  }
+  .title .titleHeart:hover .far {
+    opacity: 0.5;
+  }
+  .title .titleHeart:hover .full_heart {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    opacity: 1;
+    background: linear-gradient(158deg, #ff79da 0%, #9356dc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .titlemenuList {
+    text-transform: uppercase;
+    padding: 1em 0 0 2em;
+    line-height: 0;
+    opacity: 1;
+  }
+  .title_menu_underline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 4px solid #99E2D0;
+    width: 3em;
+  }
+  .containerMeal .mealCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1em;
+    line-height: 0;
+    background-color: white;
+    border-radius: 1em;
+    font-size: .7em;
+    height: 3.5rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .containerMeal .mealCard .titleCard {
+    row-gap: 1em;
+    width: 80%;
+    padding: 2em 0 0 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .containerMeal .mealCard .priceCard {
+    padding: 2em;
+    width: 20%;
+    font-weight: bold;
+  }
+  .containerMeal .mealCard .menu_icon {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 3.5em;
+    margin: 0 -3em 0 0;
+  }
+  .containerMeal .mealCard:hover .menu_icon {
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+    margin: 0 0 0 0;
+  }
+  .containerMeal .mealCard:hover i {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+  .order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #indexHeader #indexTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Shrikhand', cursive;
+    margin: auto;
+    height: 1.5em;
+    padding-top: .5em;
+  }
+  #indexNavigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-bottom: 1em;
+  }
+  #indexNavigation #indexLocation {
+    border-top: 3px solid #dbdbdb;
+    background-color: #ebebeb;
+    padding: 10px 0;
+  }
+  #indexNavigation #indexLocation #location {
+    background-color: inherit;
+    border: none;
+    width: 130px;
+  }
+  #indexNavigation #indexLocation #location::-webkit-input-placeholder {
+    color: black;
+    font-weight: bold;
+  }
+  #indexNavigation #indexLocation #location:-ms-input-placeholder {
+    color: black;
+    font-weight: bold;
+  }
+  #indexNavigation #indexLocation #location::-ms-input-placeholder {
+    color: black;
+    font-weight: bold;
+  }
+  #indexNavigation #indexLocation #location::placeholder {
+    color: black;
+    font-weight: bold;
+  }
+  #indexNavigation #indexLocation #location:focus {
+    outline: none;
+  }
+  #indexNavigation #hook {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #indexNavigation .button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5em;
+    margin: 0 2em;
+    padding: 1em;
+    background: #ff79da;
+    background: linear-gradient(185deg, #ff79da 0%, #9f6ad6 84%, #9356dc 100%);
+  }
+  #indexOperation .operation_title {
+    padding: 0 1em;
+  }
+  #indexOperation .operation_container {
+    padding: 0;
+  }
+  #indexOperation .operation_container .operation_thumbnail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f6f6f6;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1.3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #indexOperation .operation_container .operation_thumbnail .number {
+    background-color: #9356DC;
+    color: #fff;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    margin-left: -1.7rem;
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+  }
+  #indexOperation .operation_container .operation_thumbnail i {
+    padding-right: 1rem;
+    color: #747474;
+  }
+  #indexOperation .operation_container .operation_thumbnail:hover {
+    background-color: #ebe1fa;
+  }
+  #indexOperation .operation_container .operation_thumbnail:hover i {
+    color: #9356DC;
+  }
+  #indexRestaurant {
+    background-color: #f2f2f2;
+    padding-bottom: 2rem;
+  }
+  #indexRestaurant .restaurant_title {
+    padding: 1em 0em 0 1em;
+  }
+  #indexRestaurant .restaurant_container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1em 1em;
+    background-color: white;
+    border-radius: 1em;
+    position: relative;
+  }
+  #indexRestaurant .restaurant_container .card .cardNew {
+    color: green;
+    font-weight: bold;
+    background-color: #a9fcf1;
+    position: absolute;
+    padding: 5px;
+    right: 10px;
+  }
+  #indexRestaurant .restaurant_container .card figure {
+    width: 100%;
+    margin: 0;
+  }
+  #indexRestaurant .restaurant_container .card figure .indexImg {
+    max-height: 160px;
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #indexRestaurant .restaurant_container .card figcaption {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+  }
+  #indexRestaurant .restaurant_container .card figcaption .cardContent {
+    line-height: 0.3em;
+    padding-left: 1em;
+  }
+  #indexRestaurant .restaurant_container .card figcaption .cardHeart {
+    position: relative;
+    font-size: 1.8rem;
+  }
+  #indexRestaurant .restaurant_container .card figcaption i {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #indexRestaurant .restaurant_container .card figcaption .full_heart {
+    opacity: 0;
+  }
+  #indexRestaurant .restaurant_container .card figcaption .cardHeart:hover {
+    -webkit-animation: all;
+            animation: all;
+  }
+  #indexRestaurant .restaurant_container .card figcaption .cardHeart:hover .far {
+    opacity: 0.5;
+  }
+  #indexRestaurant .restaurant_container .card figcaption .cardHeart:hover .full_heart {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    opacity: 1;
+    background: linear-gradient(158deg, #ff79da 0%, #9356dc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+/*# sourceMappingURL=style.css.map */
