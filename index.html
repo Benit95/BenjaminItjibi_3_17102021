@@ -10,6 +10,10 @@
 </head>
 <body>
     <!--Loading Spinner-->
+<div class="load">
+    <span class="loader"> </span>  
+</div>
+<div class="home">
     <!--Loading Spinner-->
 
     <!-- Header-->
@@ -21,10 +25,13 @@
     <nav id="indexNavigation">
         <!-- Location -->
         <div id="indexLocation">
-            <span class="map_marker">
-                <i class="fas fa-map-marker-alt"></i>
-            </span>
-            <input type="search" name="localisation" id="location" placeholder="Paris, Belleville">
+            <div class="location">
+                <span class="map_marker">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <input type="search" name="localisation" id="location" placeholder="Paris, Belleville">
+            </div>
+            
         </div>
         <!-- Location -->
 
@@ -37,7 +44,9 @@
 
         
         <!-- Button -->
-        <input type="button" value="Explorer nos restaurants" class="button">
+        <div class="indexButton">
+            <input type="button" value="Explorer nos restaurants" class="button">
+        </div>
         <!-- Button -->
     </nav>
 
@@ -45,25 +54,29 @@
         <!-- Fonctionnement -->
         <article id="indexOperation">
             <h2 class="operation_title">Fonctionnement</h2>
-            <div>
             <ul class="operation_container">
                 <li class="operation_thumbnail">
-                    <div class="number">1</div>
+                    <div class="container_number">
+                        <div class="number">1</div>
+                    </div>
                     <i class="fas fa-mobile-alt operation_icon"></i>
                     <span class="operation_text">Choisissez un restaurant</span>
                 </li>
                 <li class="operation_thumbnail">
-                    <div class="number">2</div>
+                    <div class="container_number">
+                        <div class="number">2</div>
+                    </div>
                     <i class="fas fa-list-ul operation_icon"></i>
                     <span class="operation_text">Composez votre menu</span>
                 </li>
                 <li class="operation_thumbnail">
-                    <div class="number">3</div>
+                    <div class="container_number">
+                        <div class="number">3</div>
+                    </div>
                     <i class="fas fa-store operation_icon"></i>
                     <span class="operation_text">Dégustez au restaurant</span>
                 </li>
             </ul>
-            </div>
         </article>
         <!-- Fonctionnement -->
 
@@ -144,19 +157,19 @@
         <div class="footer_container">
             <ul>
                 <li id="suggest">
-                    <a href="#">
+                    <a href="#suggest">
                         <i class="fas fa-utensils"></i>
                         Proposer un restaurant
                     </a>
                 </li>
                 <li id="partner">
-                    <a href="#">
+                    <a href="#partner">
                         <i class="fas fa-hands-helping fa-xs"></i>
                         Devenir partenaire
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="footer_link">
+                    <a href="#legal_notice" id="legal_notice">
                         Mention légales
                     </a>
                 </li>
@@ -169,6 +182,7 @@
         </div>
     </footer>
 
+</div>
 
 </body>
 </html>

@@ -49,7 +49,7 @@
             font-weight: bold;
             border: none;
             border-radius: 1.5em;
-            margin: 0 2em;
+            margin: 2em;
             padding: 1em;
             background: rgb(255,121,218);
             background: linear-gradient(185deg, rgba(255,121,218,1) 0%, rgba(159,106,214,1) 84%, rgba(147,86,220,1) 100%);
@@ -168,4 +168,183 @@
             }
     }
            
+}
+@media screen and (min-width:768px) {
+    body {
+        margin:0 2em !important; 
+    }
+    #indexHeader{
+        #indexTitle {
+            display: flex;
+            justify-content: center;
+            font-family: 'Shrikhand', cursive;
+            margin: auto;
+            height:1.5em;
+            padding-top: .5em;
+        }
+    }
+    #indexNavigation {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #f6f6f6;
+        padding-bottom: 1em;
+        #indexLocation{
+            border-top:3px solid #dbdbdb;;
+            background-color: #ebebeb;
+            padding: 10px 0;
+            #location  {
+                background-color: inherit;
+                border: none;
+                width: 130px;
+                &::placeholder{
+                    color:black;
+                    font-weight: bold;
+                } 
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .indexButton {
+            padding: 1em;
+        }
+    }
+    #indexOperation {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        margin: 2em 0;
+        .operation_title {
+            font-size: 2em;
+            margin: auto;
+        }
+    }
+    .operation_container{
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 2em;
+        .operation_thumbnail {
+            display: flex;
+            background-color: #f6f6f6;
+            padding: 3em;
+            border-radius: 1.3em;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+            .number {
+                background-color: $primary;
+                color: #fff;
+                width: 1.6rem;
+                height: 1.6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                margin-left: -1.7rem;
+                margin-right: 0.8rem;
+                font-size: 1.2rem;
+            }
+            i {
+                padding-right: 1rem;
+                color: #747474;
+            }
+            &:hover {
+                background-color: #ebe1fa;
+                i{
+                    color: #9356DC;
+                }
+            }
+        }
+    }
+    #indexRestaurant {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-start;
+        background-color: #f2f2f2;
+        padding-bottom: 2rem;
+        
+            .restaurant_title {
+                font-size: 2em;
+                margin: auto;
+                padding-top: 1em;
+            }
+            .restaurant_container{
+                display: flex;
+                align-items: flex-start;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                gap: 2em;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1em;
+                    background-color: white;
+                    border-radius: 1em;
+                    position: relative;
+                    min-height: 330px;
+                    max-height: 350px;
+                    max-width: 500px;
+                    min-width: 330px;
+                    .cardNew {
+                        color:green;
+                        font-weight: bold;
+                        background-color: rgb(169, 252, 241);
+                        position: absolute;
+                        padding: 5px;
+                        right: 10px;
+                    }
+                    figure {
+                        width: 100%;
+                        height: calc(100% - 20%);
+                        margin: 0;
+                        overflow: hidden;
+                    }
+                    figcaption {
+                        height: 20%;
+                        display: grid;
+                        grid-template-columns: 80% 20%;
+                        .cardContent {
+                            line-height: 0.3em;
+                            padding-left: 1em;
+                        }
+                        .cardHeart {
+                            position: relative;
+                            font-size: 1.8rem;
+                        }
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            right: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        .full_heart{
+                            opacity: 0;
+                        }
+                        .cardHeart:hover{
+                            animation: all;
+                            .far{
+                                opacity: 0.5;
+                            }
+                            .full_heart{
+                                transition: 0.8s;
+                                opacity: 1;
+                                background: linear-gradient(158deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+                                -webkit-text-fill-color: transparent;
+                                -webkit-background-clip: text;
+                            }
+                        }
+                    }
+                    &:hover{
+                        background-color:$bg-indexcard;
+                    }
+                }   
+            }
+    }
 }
