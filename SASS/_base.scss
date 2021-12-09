@@ -13,28 +13,48 @@ $size: 3vh;
 $anim-dur: 1000ms;
 $lighten:linear-gradient(158deg, #ff79da 0%, #9356dc 100%);
 
-
-//LES LIENS
-a{
-    color:black;
-    cursor: pointer;
-}
-//RESTAURANT HEADER
-#restaurantHeader {
-    display: flex;
-    align-items: center;
-    padding: 0 1em;
-    .headerTitlerestaurants {
-        margin: auto;
-        font-family: 'Shrikhand', cursive;
-    }
-}
-
 // BODY FONT
 body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+//EN TÊTE
+#restaurantHeader {
+    display:flex;
+    align-items: center;
+    .headerTitlerestaurants {
+    margin: auto;
+    font-family: 'Shrikhand', cursive;
+    }
+    .returnHome{
+      padding-left: 1em;
+    }
+}
+
+//IMG BG MENU
+.bgimgRestaurant{
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+#bg_radius-resto {
+    margin-top: -4em;
+    background-color: #f2f2f2;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    position: relative;
+}
+
+//IMG INDEX
+.indexImg {
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    object-fit: cover;
 }
 
 // INDEX BUTTON
@@ -62,7 +82,12 @@ body{
 }
 
 // RESTAURANT BUTTON
-.orderButton {
+.order{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+  }
+  .orderButton {
     color:white;
     font-weight: bold;
     border: none;
@@ -73,6 +98,9 @@ body{
     box-shadow: 0px 2px 10px 0px #7d7d7d;
     -webkit-box-shadow: 0px 2px 10px 0px #7d7d7d;
     -moz-box-shadow: 0px 2px 10px 0px #7d7d7d;
+    @media screen and (min-width:1024px) {
+      font-size: 1.5em;
+    }
     &:hover {
         transition-duration: 400ms;
         transform:  scale(1.2);
@@ -81,13 +109,15 @@ body{
         -webkit-box-shadow: 0px 2px 10px 0px #525252;
         -moz-box-shadow: 0px 2px 10px 0px #525252;
     }
-}
-
+  }
 
 // FOOTER
 footer {
     background-color: $bg-footer;
     padding: 1em;
+    @media screen and (min-width:1024px) {
+      font-size: 1.5em;
+    }
     .footer_title {
         padding: 0  0 0 2em;
         color: white;
@@ -114,32 +144,87 @@ footer {
     }
 }
 
-//IMG BG MENU
-.bgimg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-//IMG INDEX
-.indexImg {
-    width: 100%;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    object-fit: cover;
+//MEALCARD
+.dish__card {
+    display: grid;
+    grid-template-columns: 70% 30% 20%;
+    -webkit-box-align: end;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0.5rem 0.5rem;
+    margin: 1em;
+    max-height: 80px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    @media screen and (min-width:1024px){
+      font-size: 1.5em;
+      min-width: 650px;
+      max-width: 650px;
+      min-height: 150px;
+      max-height: 150px;
+    }
+    &:hover{
+      .dish__check {
+          transition-duration: .5s;
+          margin-left:-3em;
+          @media screen and (min-width:1024px) {
+            margin-left:-2em;
+          }
+      }
+      i {
+          transform: rotate(-360deg);
+          transition-duration: 1s;
+        }
+    }
+    .dish__card__name {
+      line-height: 0.7;
+      padding: 0.5em 1em;
+    }
+  
+    .dish__card__price {
+      font-weight: bold;
+      padding-top: 1.5em;
+    }
+    .dish__check {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      min-width: 50px;
+      max-width: 50px;
+      height: 85px;
+      background-color: rgb(153, 226, 208);
+      color: white;
+      -webkit-box-pack: center;
+      justify-content: center;
+      @media screen and (min-width:1024px) {
+        min-height: 150px;
+        max-height: 150px;
+      }
+    }
+  }
+div.dish__card__name p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0px;
+    padding: 0.5em;
+    overflow: hidden;
 }
 
 //APPARITION PROGRESSIVE-FADEIN/SLIDE
-.mealCard:nth-child(1) {
-    animation: FadeIn 1s cubic-bezier(.39,.575,.565,1.000) .5s both;
-}
-.mealCard:nth-child(2) {
+.dish__card:nth-child(1) {
     animation: FadeIn 1s cubic-bezier(.39,.575,.565,1.000) 1s both;
 }
-.mealCard:nth-child(3) {
+.dish__card:nth-child(2) {
+    animation: FadeIn 1s cubic-bezier(.39,.575,.565,1.000) 1s both;
+}
+.dish__card:nth-child(3) {
     animation: FadeIn 1s cubic-bezier(.39,.575,.565,1.000) 1.5s both;
 }
-
+.dish__card:nth-child(4) {
+    animation: FadeIn 1s cubic-bezier(.39,.575,.565,1.000) 2s both;
+}
 @keyframes FadeIn {
     0% {
       opacity: 0;
@@ -153,62 +238,56 @@ footer {
 }
 
 /*Loading spinner*/
-
 // Page blanche lors du loader
 @keyframes body {
-    0% {    
-        opacity: 0;
-    }
-    100% { 
-        transform: rotate(360deg);
-        opacity: 0;
-    }
+  0% {    
+      opacity: 0;
+  }
+  100% { 
+      transform: rotate(360deg);
+      opacity: 0;
+  }
 }
-.home {
-            
-    animation: body 2s linear;
-    -webkit-animation: body 2s linear;
-    -o-animation: body 2s linear;
- }
- /* Loading... */
+.home {         
+  animation: body 2s linear;
+  -webkit-animation: body 2s linear;
+  -o-animation: body 2s linear;
+}
+/* Loading... */
 
-        
 .load {
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.loader {
-                
-    border: 12px solid #FF79DA;
-    border-top: 12px solid #9356DC ;
-    border-bottom: 12px solid #9356DC;
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
-    margin: auto; // centrage
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    animation: loading 2.5s linear 1; // Name Keyframe Duration 
-    -webkit-animation:  loading 2.5s linear 1;
-    -o-animation: loading 2.5s linear 1;
-    animation-fill-mode: forwards;
-    transition: transform 3s;
+.loader {        
+  border: 12px solid #FF79DA;
+  border-top: 12px solid #9356DC ;
+  border-bottom: 12px solid #9356DC;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: auto; // centrage
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  animation: loading 2.5s linear 1; // Name Keyframe Duration 
+  -webkit-animation:  loading 2.5s linear 1;
+  -o-animation: loading 2.5s linear 1;
+  animation-fill-mode: forwards;
+  transition: transform 3s;
 }
-              
-    
-    @keyframes loading {
-        0% { 
-            transform: rotate(0deg); 
-            opacity: 1;
-        }
-        100%{ 
-            transform: rotate(360deg);
-            opacity: 0;
-        }
-    }
+            
+@keyframes loading {
+      0% { 
+          transform: rotate(0deg); 
+          opacity: 1;
+      }
+      100%{ 
+          transform: rotate(360deg);
+          opacity: 0;
+      }
+}
