@@ -1110,9 +1110,6 @@ div.dish__card__name p {
     padding-right: 1rem;
     color: #747474;
   }
-  #indexOperation .operation_container .operation_thumbnail:hover {
-    background-color: #ebe1fa;
-  }
   #indexOperation .operation_container .operation_thumbnail:hover i {
     color: #9356DC;
   }
