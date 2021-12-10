@@ -109,6 +109,10 @@
             min-height: 300px;
             max-height: 390px;
             border-radius: 1em;
+            @media screen and (max-width:375px){
+                max-height: 260px;
+                min-height: 190px;
+            }
             .cardNew{
                 position: absolute;
                 right: 40px;
@@ -120,10 +124,16 @@
             .imgrestoindex{
                 min-height: inherit;
                 max-height: inherit;
-                border-radius: inherit;
+                border-top-left-radius: inherit;
+                border-top-right-radius: inherit;
+                overflow: hidden;
                 .indexImg {     
                     min-height: 300px;
                     max-height: 300px;
+                    @media screen and (max-width:375px){
+                        min-height: 230px;
+                        max-height: 200px;
+                    }
                 }
             }
             .descriptionCard {

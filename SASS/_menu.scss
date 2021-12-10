@@ -2,10 +2,9 @@
 
 .dish__card__name {
     p:first-child {
-    font-weight: bold;
+        font-weight: bold;
     }
 }
-
 @media screen and (max-width:768px) {
     body {
         margin: 0 !important;
@@ -198,3 +197,5 @@
       }
 
 }
+
+

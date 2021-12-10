@@ -1140,6 +1140,16 @@ div.dish__card__name p {
     max-height: 390px;
     border-radius: 1em;
   }
+}
+
+@media screen and (max-width: 768px) and (max-width: 375px) {
+  .restaurant_container a {
+    max-height: 260px;
+    min-height: 190px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .restaurant_container a .cardNew {
     position: absolute;
     right: 40px;
@@ -1151,12 +1161,24 @@ div.dish__card__name p {
   .restaurant_container a .imgrestoindex {
     min-height: inherit;
     max-height: inherit;
-    border-radius: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    overflow: hidden;
   }
   .restaurant_container a .imgrestoindex .indexImg {
     min-height: 300px;
     max-height: 300px;
   }
+}
+
+@media screen and (max-width: 768px) and (max-width: 375px) {
+  .restaurant_container a .imgrestoindex .indexImg {
+    min-height: 230px;
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .restaurant_container a .descriptionCard {
     display: -webkit-box;
     display: -ms-flexbox;
