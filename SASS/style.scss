@@ -5,6 +5,7 @@
 
 
 
+
 @media screen and (max-width:768px) {
     #indexHeader{
         #indexTitle {
@@ -15,7 +16,6 @@
             height:1.5em;
             padding-top: .5em;
     }
-
     }
     #indexNavigation {
         display: flex;
@@ -82,7 +82,6 @@
                     margin-left: -1.5rem;
                     margin-right: 0.8rem;
                     font-size: 1.2rem;
-    
                 }
                 i {
                     padding-right: 1rem;
@@ -97,79 +96,77 @@
             }
         }
     }
-    #indexRestaurant {
-        background-color: #f2f2f2;
-        padding-bottom: 2rem;
-            .restaurant_title {
-                padding: 1em 0em 0 1em;
-            }
-            .restaurant_container{
-                .card {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 1em 1em;
-                    background-color: white;
-                    border-radius: 1em;
-                    position: relative;
-                    .cardNew {
-                        color:green;
-                        font-weight: bold;
-                        background-color: rgb(169, 252, 241);
-                        position: absolute;
-                        padding: 5px;
-                        right: 10px;
-                    }
-                    figure {
-                        width: 100%;
-                        margin: 0;
-                        .indexImg {
-                            max-height: 160px;
-                            width: 100%;
-                            border-top-left-radius: 1em;
-                            border-top-right-radius: 1em;
-                            object-fit: cover;
-                        }
-                    }
-                    figcaption {
-                        display: grid;
-                        grid-template-columns: 80% 20%;
-                        .cardContent {
-                            line-height: 0.3em;
-                            padding-left: 1em;
-                        }
-                        .cardHeart {
-                            position: relative;
-                            font-size: 1.8rem;
-                        }
-                        i{
-                            position: absolute;
-                            top: 50%;
-                            right: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-                        .full_heart{
-                            opacity: 0;
-                        }
-                        .cardHeart:hover{
-                            animation: all;
-                            .far{
-                                opacity: 0.5;
-                            }
-                            .full_heart{
-                                transition: 0.8s;
-                                opacity: 1;
-                                background: linear-gradient(158deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-                                -webkit-text-fill-color: transparent;
-                                -webkit-background-clip: text;
-                            }
-                        }
-                    }
-                }   
-            }
+    .restaurant_title{
+        padding-left: 1em;
     }
-           
+    .restaurant_container {
+        display:flex;
+        flex-flow: column;
+        a{
+            display: flex;
+            flex-direction: column;
+            margin: 1em 1em;
+            box-shadow: 3px 8px 8px #dedada;
+            min-height: 300px;
+            max-height: 390px;
+            border-radius: 1em;
+            .cardNew{
+                position: absolute;
+                right: 40px;
+                color: #1b6150;
+                background-color: #99e2d0;
+                padding: 0.5em;
+                font-size: 1.2em;
+            }
+            .imgrestoindex{
+                min-height: inherit;
+                max-height: inherit;
+                border-radius: inherit;
+                .indexImg {     
+                    min-height: 300px;
+                    max-height: 300px;
+                }
+            }
+            .descriptionCard {
+                display: flex;
+                .cardContent {
+                    width: 80%;
+                    padding: 1em;
+                    line-height: 0;
+                }
+                .cardHeart{
+                    display: flex;
+                    width:20%;
+                    position: relative;
+                    font-size: 2em;
+                }
+                i{
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .full_heart{
+                    opacity: 0;
+                }
+                .cardHeart:hover{
+                    animation: all;
+                    .far{
+                        opacity: 0.5;
+                    }
+                    .full_heart{
+                        transition: 0.8s;
+                        opacity: 1;
+                        background: linear-gradient(158deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                    }
+                }
+            }
+        }
+    }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
     body {
         margin:0 2em !important; 
     }
@@ -183,12 +180,14 @@
             padding-top: .5em;
         }
     }
+    
     #indexNavigation {
         display: flex;
         flex-direction: column;
         text-align: center;
         background-color: #f6f6f6;
         padding-bottom: 1em;
+        font-size: 1.5em;
         #indexLocation{
             border-top:3px solid #dbdbdb;;
             background-color: #ebebeb;
@@ -196,7 +195,7 @@
             #location  {
                 background-color: inherit;
                 border: none;
-                width: 130px;
+                width: 190px;
                 &::placeholder{
                     color:black;
                     font-weight: bold;
@@ -216,6 +215,7 @@
         align-content: center;
         align-items: flex-start;
         margin: 2em 0;
+        font-size: 1.4em;
         .operation_title {
             font-size: 2em;
             margin: auto;
@@ -260,91 +260,89 @@
                 }
             }
         }
-    }
+    }    
     #indexRestaurant {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        align-items: flex-start;
-        background-color: #f2f2f2;
-        padding-bottom: 2rem;
-        
-            .restaurant_title {
-                font-size: 2em;
-                margin: auto;
-                padding-top: 1em;
+        align-items: center;
+        margin: 0 25em;
+        .restaurant_title {
+            font-size: 3em;
+        }
+    }
+    //INDEX CARD
+    .restaurant_container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        a{
+            width: 500px;
+            max-height: 440px;
+            min-height: 440px;
+            margin: 2em;
+            position: relative;
+            border-radius: 30px;
+            box-shadow: 3px 8px 8px #dedada;
+            .cardNew {
+                position: absolute;
+                color: #217460;
+                background-color: #99e2d0;
+                left: 387px;
+                font-size: 1.5em;
+                padding: 0.3em;
             }
-            .restaurant_container{
-                display: flex;
-                align-items: flex-start;
-                flex-flow: row wrap;
-                justify-content: center;
-                align-content: center;
-                gap: 2em;
-                .card {
+            .imgrestoindex{
+                max-width: 500px;
+                max-height: 330px;
+                min-width: 500px;
+                min-height: 330px;
+                overflow: hidden;
+                margin: 0;
+                border-top-left-radius: inherit;
+                border-top-right-radius: inherit;
+                img {
+                    max-width:100%;
+                    max-height:100%;
+                    border-radius: inherit;
+                    object-fit: cover;
+                }
+            }
+            .descriptionCard{
+                font-size: 1.5em;
+                display: grid;
+                grid-template-columns: 80% 20%;
+                line-height: 0;
+                padding: .5em 1em;
+                .cardHeart {
                     display: flex;
-                    flex-direction: column;
-                    margin: 1em;
-                    background-color: white;
-                    border-radius: 1em;
+                    align-items: center;
+                    justify-content: flex-end;
                     position: relative;
-                    min-height: 330px;
-                    max-height: 350px;
-                    max-width: 500px;
-                    min-width: 330px;
-                    .cardNew {
-                        color:green;
-                        font-weight: bold;
-                        background-color: rgb(169, 252, 241);
-                        position: absolute;
-                        padding: 5px;
-                        right: 10px;
+                    font-size: 2em;
+                }
+                
+                i{
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .full_heart{
+                    opacity: 0;
+                }
+                .cardHeart:hover{
+                    animation: all;
+                    .far{
+                        opacity: 0.5;
                     }
-                    figure {
-                        width: 100%;
-                        height: calc(100% - 20%);
-                        margin: 0;
-                        overflow: hidden;
+                    .full_heart{
+                        transition: 0.8s;
+                        opacity: 1;
+                        background: linear-gradient(158deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
                     }
-                    figcaption {
-                        height: 20%;
-                        display: grid;
-                        grid-template-columns: 80% 20%;
-                        .cardContent {
-                            line-height: 0.3em;
-                            padding-left: 1em;
-                        }
-                        .cardHeart {
-                            position: relative;
-                            font-size: 1.8rem;
-                        }
-                        i{
-                            position: absolute;
-                            top: 50%;
-                            right: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-                        .full_heart{
-                            opacity: 0;
-                        }
-                        .cardHeart:hover{
-                            animation: all;
-                            .far{
-                                opacity: 0.5;
-                            }
-                            .full_heart{
-                                transition: 0.8s;
-                                opacity: 1;
-                                background: linear-gradient(158deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-                                -webkit-text-fill-color: transparent;
-                                -webkit-background-clip: text;
-                            }
-                        }
-                    }
-                    &:hover{
-                        background-color:$bg-indexcard;
-                    }
-                }   
+                }
             }
+        }
     }
 }
