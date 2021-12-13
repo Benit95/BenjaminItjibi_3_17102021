@@ -190,12 +190,15 @@ footer {
     .dish__card__name {
       line-height: 0.7;
       padding: 0.5em 1em;
-      width: 300px;
       @media screen and (min-width:375px) and (max-width:1024px) {
-        width: 200px;
-      }
+        max-width: 240px;
+        min-width: 240px;
+       }
       @media screen and (max-width:375px) {
         width: 150px;
+      }
+      @media screen and (min-width:1024px) {
+        width: 400px;
       }
     }
     .dish__card__price {
@@ -247,6 +250,9 @@ div.dish__card__name p {
 }
 .dish__card:nth-child(4) {
     animation: FadeIn 1s cubic-bezier(.39,.575,.565,1.000) 2s both;
+}
+.dish__card:nth-child(5) {
+  animation: FadeIn 1s cubic-bezier(.39,.575,.565,1.000) 2.5s both;
 }
 @keyframes FadeIn {
     0% {
