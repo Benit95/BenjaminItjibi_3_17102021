@@ -282,7 +282,7 @@ div.dish__card__name p {
       opacity: 0;
   }
 }
-.home {         
+.home {
   animation: body 2s linear;
   -webkit-animation: body 2s linear;
   -o-animation: body 2s linear;
@@ -290,12 +290,14 @@ div.dish__card__name p {
 /* Loading... */
 
 .load {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.loader {        
+.loader {   
+  width: 100%;     
   border: 12px solid #FF79DA;
   border-top: 12px solid #9356DC ;
   border-bottom: 12px solid #9356DC;
