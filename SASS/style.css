@@ -523,7 +523,7 @@ footer .footer_container ul li a {
   max-height: 80px;
   overflow: hidden;
   background: white;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -557,7 +557,7 @@ footer .footer_container ul li a {
 
 .dish__card .dish__card__name {
   line-height: 0.7;
-  padding: 0.5em 1em;
+  padding: 0.5em 0em 0.5em 0.5em;
 }
 
 @media screen and (min-width: 375px) and (max-width: 1024px) {
@@ -628,6 +628,10 @@ div.dish__card__name p {
   margin: 0px;
   padding: 0.5em;
   overflow: hidden;
+}
+
+.dish__card__name p:first-child {
+  font-weight: bold;
 }
 
 .dish__card:nth-child(1) {
@@ -769,10 +773,6 @@ div.dish__card__name p {
             transform: rotate(360deg);
     opacity: 0;
   }
-}
-
-.dish__card__name p:first-child {
-  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
