@@ -831,13 +831,16 @@ div.dish__card__name p {
     text-transform: uppercase;
     padding: 1em 0 .5em 1em;
     line-height: 0;
+    position: relative;
   }
-  .containermealCard .titlemenuList .title_menu_underline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-top: 4px solid #99E2D0;
-    width: 3.5em;
+  .containermealCard .titlemenuList::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 10;
+    bottom: 5;
   }
 }
 
@@ -905,15 +908,20 @@ div.dish__card__name p {
   }
   .containermealCard .titlemenuList {
     text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.5em;
     padding: 1em 0 .5em 1em;
     line-height: 0;
+    position: relative;
   }
-  .containermealCard .titlemenuList .title_menu_underline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-top: 4px solid #99E2D0;
-    width: 3.5em;
+  .containermealCard .titlemenuList::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 26px;
+    bottom: 13px;
   }
 }
 
@@ -993,17 +1001,20 @@ div.dish__card__name p {
   }
   .containermealCard .titlemenuList {
     text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2em;
     padding: 1em 0 .5em 1em;
     line-height: 0;
-    margin: auto;
-    font-size: 1.5em;
+    position: relative;
   }
-  .containermealCard .titlemenuList .title_menu_underline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-top: 4px solid #99E2D0;
-    width: 3.5em;
+  .containermealCard .titlemenuList::after {
+    content: "";
+    width: 45%;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 35px;
+    bottom: 20px;
   }
 }
 
